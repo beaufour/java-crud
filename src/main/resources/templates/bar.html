@@ -4,21 +4,19 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0" />
-    <title>Bars</title>
+    <title>Bar</title>
 </head>
 
 <body>
-    <h1>Bars</h1>
+    <h1>Bar: [[${bar.name}]]</h1>
 
     <div th:if="${message != null}">
-        Error: [[${message}]]
+        [[${message}]]]
     </div>
 
-    <ul>
-        <li th:each="bar : ${bars}">
-            <a th:href="@{/bars/{id}(id=${bar.id})}" th:text="${bar.name}"></a>
-        </li>
-    </ul>
+    <div>
+        What a bar!
+    </div>
 </body>
 
 </html>
